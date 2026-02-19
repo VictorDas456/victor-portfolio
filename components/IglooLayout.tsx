@@ -5,9 +5,12 @@ import { motion } from "framer-motion";
 
 import Navbar from "./Navbar";
 import Loader from "./Loader";
-import ThreeStarfield from "./ThreeStarfield";
-
+import dynamic from "next/dynamic";
 import { Space_Grotesk } from "next/font/google";
+
+const ThreeStarfield = dynamic(() => import("./ThreeStarfield"), {
+  ssr: false,
+});
 
 const space = Space_Grotesk({
   subsets: ["latin"],

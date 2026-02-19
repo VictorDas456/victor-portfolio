@@ -11,7 +11,7 @@ export default function ThreeStarfield() {
         <Stars
           radius={120}
           depth={60}
-          count={4000}
+          count={2500}
           factor={4}
           saturation={0}
           fade
